@@ -5,19 +5,25 @@ using System.Text;
 
 namespace Models
 {
-    public class Book
+    public class Book : BaseEntity
     {
-        public string Id { get; set; }
+        
         [Required]
         public string ISBN { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
-        public string Summary { get; set; }
+        public string Description{ get; set; }
         [Required]
+        public DateTime PublishedAt { get; set; }
         public string Author { get; set; }
+        public string CategoryId { get; set; }
         public Category Category { get; set; }
-        public User User { get; set; }
-        
+        public List<UserBook> UserBooks { get; set; }
+
+        public Book()
+        {
+            UserBooks = new List<UserBook>();
+        }
     }
 }

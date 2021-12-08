@@ -15,21 +15,43 @@ namespace BookLibrary.Controllers
     {
 
     
-private readonly IService _jwt; public AuthorizationController(IService jwt)
+        private readonly IService _jwt; public AuthorizationController(IService jwt)
         {
             _jwt = jwt;
         }
-        [HttpGet("Login")]
-        public IActionResult Login()
+        [HttpPost("Signin")]
+        public IActionResult Signin()
         {
             return Ok(_jwt.GenerateToken());
         }
-        [HttpGet]
-        [Authorize]
-        public IActionResult Authorize()
+
+        [HttpPost("Register")]
+
+        public IActionResult Register()
         {
-            return Ok("Authorized");
+            return Ok();
         }
+
+        [HttpPost("ForgotPassword")]
+
+        public IActionResult ForgotPassword()
+        {
+            return Ok();
+        }
+
+        [HttpPost("LogOut")]
+
+        public IActionResult LogOut()
+        {
+            return Ok();
+        }
+
+       // [HttpGet]
+       // [Authorize]
+      //  public IActionResult Authorize()
+       // {
+         //   return Ok("Authorized");
+       // }
 
 
     }

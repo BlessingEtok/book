@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Models
 {
-    public class Category
+    public class Category:BaseEntity
     {
-        public string Id { get; set; }
-        public string Type { get; set; }
+        public string Genre { get; set; }
+     
         public List<Book> Books { get; set; }
 
         public Category()

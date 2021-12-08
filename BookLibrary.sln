@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookLibrary", "BookLibrary\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{566B42D4-E4BE-4AC8-984D-16B1851FA577}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.DataAccess", "BookLibrary.DataAccess\BookLibrary.DataAccess.csproj", "{A2E8E08C-7E9D-44FB-8A47-5F6B71C76DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.Core", "BookLibrary.Core\BookLibrary.Core.csproj", "{004DD120-0C60-4346-8BE8-9FD12451B35B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{566B42D4-E4BE-4AC8-984D-16B1851FA577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{566B42D4-E4BE-4AC8-984D-16B1851FA577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{566B42D4-E4BE-4AC8-984D-16B1851FA577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E8E08C-7E9D-44FB-8A47-5F6B71C76DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E8E08C-7E9D-44FB-8A47-5F6B71C76DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E8E08C-7E9D-44FB-8A47-5F6B71C76DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E8E08C-7E9D-44FB-8A47-5F6B71C76DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004DD120-0C60-4346-8BE8-9FD12451B35B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004DD120-0C60-4346-8BE8-9FD12451B35B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004DD120-0C60-4346-8BE8-9FD12451B35B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004DD120-0C60-4346-8BE8-9FD12451B35B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
